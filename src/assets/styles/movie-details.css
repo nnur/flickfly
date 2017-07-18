@@ -1,0 +1,115 @@
+.ff-movie-details--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1050px;
+  height: 100%;
+  margin: auto;
+}
+
+.ff-movie-details--wrapper {
+  display: flex;
+  margin: auto;
+}
+
+.ff-movie-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+  color: white;
+}
+
+.ff-movie-details--title {
+  font-family: 'Oswald', 'sans-serif';
+  font-weight: 600;
+  font-size: 44px;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+.ff-movie-details--overview {
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+
+.ff-movie-details--info {
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ff-movie-details--info span  {
+  margin-bottom: 10px;
+  padding-right: 25px;
+}
+
+.ff-movie-details--info span:nth-of-type(2n)  {
+  text-align: right;
+}
+
+.ff-movie-details--poster {
+  width: 340px;
+  height: 515px;
+}
+
+.ff-movie-details-close--wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ff-movie-details-close {
+  width: 35px;
+  cursor: pointer;
+  padding-right: 20px;
+  padding-top: 20px;
+  z-index: 2;
+}
+
+.ff-movie-details--info .ff-movie-rating {
+  width: 12px;
+}
+
+.ff-movie-details--genre {
+  border-radius: 5px;
+  background: white;
+  color: var(--bg-blue-1);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  height: 16px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 850px) {
+  .ff-movie-details--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .ff-movie-details {
+    margin: auto;
+    display: block;
+    max-width: 85%;
+    margin-top: 50px;
+  }
+
+  .ff-movie-details--title {
+    text-align: center;
+  }
+  .ff-movie-details--info span  {
+    padding-right: 0px;
+    min-width: 50%;
+  }
+}

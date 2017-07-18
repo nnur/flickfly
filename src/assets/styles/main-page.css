@@ -1,0 +1,9 @@
+.ff-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+}
