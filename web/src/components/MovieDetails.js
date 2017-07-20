@@ -73,7 +73,7 @@ class MovieDetails extends Component {
 
             <div className="ff-movie-details--info">
               <span> {stars} </span>
-              <span> {movie.release_date && movie.release_date.replace(/-/g, '/')} </span>
+              <span> {movie.release_date.replace(/-/g, '/')} </span>
               <span> Rated adult: {movie.rated_adult ? ' Yes' : ' No'}</span>
               <span> {`${movie.vote_count} votes`} </span>
             </div>

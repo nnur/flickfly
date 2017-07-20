@@ -22,6 +22,9 @@ class MovieCard extends Component {
 
   render() {
     const stars = this.getStars();
+    const posterPath = this.props.movie.poster_path ? 
+        `https://image.tmdb.org/t/p/w342/${this.props.movie.poster_path}` : missingPoster;
+    
     return (
       <div
         className="ff-movie-card--wrapper"
@@ -31,7 +34,7 @@ class MovieCard extends Component {
           <div className="ff-movie-img--wrapper">
             <img
               onError={this.handleImgError}
-              src={`https://image.tmdb.org/t/p/w185/${this.props.movie.poster_path}`}
+              src={posterPath}
               className="ff-movie-img"
               alt=""
             />

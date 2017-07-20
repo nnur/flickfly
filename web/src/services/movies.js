@@ -9,7 +9,7 @@ const axiosInstance = axios.create({
 function getMovies({ page, title }) {
   return axiosInstance({
     method: 'GET',
-    url: `/movies/?page=${page}&title=${title}`,
+    url: `/movies/?page=${page}&title=${title}`
   }).then(response => response.data);
 }
 
