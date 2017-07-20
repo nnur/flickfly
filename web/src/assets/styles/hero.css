@@ -1,0 +1,56 @@
+.ff-hero {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+.ff-hero-logo img {
+  width: auto;
+  height: 130px;
+  padding-top: 30px;
+}
+
+.ff-hero-title {
+  font-family: 'BebasNeue', sans-serif;
+  letter-spacing: 4px;
+  font-size: 64px;
+  font-weight: 600;
+  color: white;
+}
+
+.ff-hero-title span {
+  color: var(--yellow-1);
+}
+
+.ff-hero-subtitle {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.ff-hero-search {
+  width: 500px;
+  margin: 30px 0px 75px 0px;
+}
+
+.ff-hero-input {
+  border-radius: 5px;
+  border: 2px solid white;
+  outline: none;
+  font-size: 16px;
+  height: 45px;
+  padding: 0 15px 0 15px;
+  width: calc(100% - 30px);
+  color: var(--bg-blue-1);
+}
+
+.ff-hero-input:focus {
+  border: 2px solid #6BA5BE;
+}
+
+@media screen and (max-width: 500px){
+  .ff-hero-search {
+    width: 80%;
+  }
+}
